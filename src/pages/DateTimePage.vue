@@ -1,7 +1,6 @@
 <template>
   <div class="">
     <div class="section">
-      <header class="danger">一点击选择日期就报错，原因未知</header>
       <el-date-picker
           v-model="dateTime1"
           type="datetime"
@@ -21,7 +20,7 @@
           @change="dateTimeChange2">
       </el-date-picker>
     </section>
-    
+
   </div>
 </template>
 

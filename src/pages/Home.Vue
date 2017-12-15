@@ -4,7 +4,6 @@
       <span class="no">级联选择器（未看）</span>
       <span class="already">swicth</span>
       <span class="already">slider</span>
-      <span class="no">日期时间选择器（bug）</span>
       <span class="no">upload 未看</span>
     </header>
     <ul>
@@ -13,7 +12,7 @@
           {{item.name}} {{item.title}}
         </router-link>
       </li>
-      
+
     </ul>
   </div>
 </template>
