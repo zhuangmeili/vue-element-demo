@@ -16,6 +16,13 @@ const DateTimePage = () => import('@/pages/DateTimePage')
 const UploadPage = () => import('@/pages/UploadPage')
 const RatePage = () => import('@/pages/RatePage')
 const FormPage = () => import('@/pages/FormPage')
+const FormVerify = () => import('@/pages/FormVerify')
+const FormVerifyDefine = () => import('@/pages/FormVerifyDefine')
+
+
+
+
+
 
 Vue.use(Router)
 export default new Router({
@@ -35,6 +42,9 @@ export default new Router({
     { path: '/uploadpage', name: 'UploadPage', component: UploadPage,title:"上传" },
     { path: '/ratepage', name: 'RatePage', component: RatePage,title:"评分" },
     { path: '/formpage', name: 'FormPage', component: FormPage,title:"form表单" },
+    { path: '/formverify', name: 'FormVerify', component: FormVerify,title:"表单验证" },
+    { path: '/formverifydefine', name: 'FormVerifyDefine', component: FormVerifyDefine,title:"自定义验证规则" },
+
 
 
   ]
