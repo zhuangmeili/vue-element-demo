@@ -18,6 +18,10 @@
 .Show{ display: block;}
 .Hide{ display: none;}
 
+.TC{ text-align: center;}
+.TR{ text-align: right;}
+.TL{ text-align: left;}
+
 /* flex 布局*/
 .Flex{ display: flex; display: -webkit-flex;}
 .Flex1{ -webkit-box-flex: 1;  -webkit-flex: 1;  flex: 1;}   /* 直接孩子 flex:1 */

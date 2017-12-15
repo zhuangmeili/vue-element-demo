@@ -1,10 +1,19 @@
 <template>
   <div class="container">
+    <header class="header">
+      <span class="no">级联选择器（未看）</span>
+      <span class="already">swicth</span>
+      <span class="already">slider</span>
+      <span class="no">日期时间选择器（bug）</span>
+      <span class="no">upload 未看</span>
+    </header>
     <ul>
-      <router-link :to="item.path" v-for="(item,index) in routes" tag="li">
-        {{item.name}}
-      </router-link>
-
+      <li  v-for="(item,index) in routes"  :key="index">
+        <router-link :to="item.path">
+          {{item.name}} {{item.title}}
+        </router-link>
+      </li>
+      
     </ul>
   </div>
 </template>
@@ -21,6 +30,9 @@
   }
 </script>
 <style scoped="scoped">
-  .container{ font-size: 28px; width: 1000px; margin: 30px auto; text-decoration: underline;}
-
+.container{ width: 500px; margin: 30px auto;}
+.container a{ display: inline-block; font-size: 20px; color:#333;line-height: 50px;text-decoration: underline;}
+.header span{ display: inline-block; margin: 5px 5px; line-height: 30px; padding: 0 20px; border-radius: 4px;}
+.header .already{ background: #999; color: #fff;}
+.header .no{ background: #f00; color: #fff;}
 </style>
