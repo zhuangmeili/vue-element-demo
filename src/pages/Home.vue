@@ -2,12 +2,13 @@
   <div class="container">
     <header class="header">
       <span class="no">级联选择器（未看）</span>
+      <span class="no">树形控件（未看）</span>
       <span class="already">swicth</span>
       <span class="already">slider</span>
       <span class="no">upload 未看</span>
     </header>
     <ul>
-      <li  v-for="(item,index) in routes"  :key="index">
+      <li v-for="(item,index) in routes"  :key="index">
         <router-link :to="item.path">
           {{item.name}} {{item.title}}
         </router-link>

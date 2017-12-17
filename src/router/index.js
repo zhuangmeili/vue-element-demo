@@ -18,7 +18,10 @@ const RatePage = () => import('@/pages/RatePage')
 const FormPage = () => import('@/pages/FormPage')
 const FormVerify = () => import('@/pages/FormVerify')
 const FormVerifyDefine = () => import('@/pages/FormVerifyDefine')
-
+const FormDynamic = () => import('@/pages/FormDynamic')
+const TablePage = () => import('@/pages/TablePage')
+const ProgressBadge = () => import('@/pages/ProgressBadge')
+const PaginationPage = () => import('@/pages/PaginationPage')
 
 
 
@@ -44,6 +47,10 @@ export default new Router({
     { path: '/formpage', name: 'FormPage', component: FormPage,title:"form表单" },
     { path: '/formverify', name: 'FormVerify', component: FormVerify,title:"表单验证" },
     { path: '/formverifydefine', name: 'FormVerifyDefine', component: FormVerifyDefine,title:"自定义验证规则" },
+    { path: '/formdynamic', name: 'FormDynamic', component: FormDynamic,title:"动态增加表单项" },
+    { path: '/tablepage', name: 'TablePage', component: TablePage,title:"table表格" },
+    { path: '/progressbadge', name: 'ProgressBadge', component: ProgressBadge,title:"进度条 /标记" },
+    { path: '/pagination', name: 'PaginationPage', component: PaginationPage,title:"分页" },
 
 
 
