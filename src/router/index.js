@@ -22,9 +22,22 @@ const FormDynamic = () => import('@/pages/FormDynamic')
 const TablePage = () => import('@/pages/TablePage')
 const ProgressBadge = () => import('@/pages/ProgressBadge')
 const PaginationPage = () => import('@/pages/PaginationPage')
+const AlertPage = () => import('@/pages/AlertPage')
+const LoadingPage = () => import('@/pages/LoadingPage')
 
+const MessaagePage = () => import('@/pages/MessaagePage')
+const MessageBoxPage = () => import('@/pages/MessageBoxPage')
+const NotificationPage = () => import('@/pages/NotificationPage')
 
+const NavMenuPage = () => import('@/pages/NavMenuPage')
+const TabsPage = () => import('@/pages/TabsPage')
+const DropDownPage = () => import('@/pages/DropDownPage')
 
+const StepsPage = () => import('@/pages/StepsPage')
+const DialogPage = () => import('@/pages/DialogPage')
+const PopoverPage = () => import('@/pages/PopoverPage')
+const CardPage = () => import('@/pages/CardPage')
+const CollapsePage = () => import('@/pages/CollapsePage')
 
 
 Vue.use(Router)
@@ -33,25 +46,41 @@ export default new Router({
     { path: '/', name: 'Home', component: Home ,title:"首页"},
     { path: '/layout', name: 'Layout', component: Layout,title:"布局" },
     { path: '/container', name: 'Container', component: Container,title:"布局容器" },
-    { path: '/button', name: 'ButtonPage', component: ButtonPage,title:"按钮" },
-    { path: '/radio', name: 'RadioPage', component: RadioPage,title:"单选" },
+    { path: '/buttonPage', name: 'ButtonPage', component: ButtonPage,title:"按钮" },
+    { path: '/radioPage', name: 'RadioPage', component: RadioPage,title:"单选" },
     { path: '/checkbox', name: 'Checkbox', component: Checkbox,title:"复选" },
-    { path: '/input', name: 'InputPage', component: InputPage,title:"输入框" },
-    { path: '/inputnumber', name: 'InputNumber', component: InputNumber,title:"计数器" },
-    { path: '/select', name: 'SelectPage', component: SelectPage,title:"选择器" },
-    { path: '/timepage', name: 'TimePage', component: TimePage,title:"时间选择器" },
-    { path: '/datepage', name: 'DatePage', component: DatePage,title:"日期选择器" },
-    { path: '/datetimepage', name: 'DateTimePage', component: DateTimePage,title:"日期时间选择器" },
-    { path: '/uploadpage', name: 'UploadPage', component: UploadPage,title:"上传" },
-    { path: '/ratepage', name: 'RatePage', component: RatePage,title:"评分" },
-    { path: '/formpage', name: 'FormPage', component: FormPage,title:"form表单" },
-    { path: '/formverify', name: 'FormVerify', component: FormVerify,title:"表单验证" },
-    { path: '/formverifydefine', name: 'FormVerifyDefine', component: FormVerifyDefine,title:"自定义验证规则" },
-    { path: '/formdynamic', name: 'FormDynamic', component: FormDynamic,title:"动态增加表单项" },
-    { path: '/tablepage', name: 'TablePage', component: TablePage,title:"table表格" },
-    { path: '/progressbadge', name: 'ProgressBadge', component: ProgressBadge,title:"进度条 /标记" },
-    { path: '/pagination', name: 'PaginationPage', component: PaginationPage,title:"分页" },
+    { path: '/inputPage', name: 'InputPage', component: InputPage,title:"输入框" },
+    { path: '/inputNumber', name: 'InputNumber', component: InputNumber,title:"计数器" },
+    { path: '/selectPage', name: 'SelectPage', component: SelectPage,title:"选择器" },
+    { path: '/timePage', name: 'TimePage', component: TimePage,title:"时间选择器" },
+    { path: '/datePage', name: 'DatePage', component: DatePage,title:"日期选择器" },
+    { path: '/dateTimePage', name: 'DateTimePage', component: DateTimePage,title:"日期时间选择器" },
+    { path: '/uploadPage', name: 'UploadPage', component: UploadPage,title:"上传" },
+    { path: '/ratePage', name: 'RatePage', component: RatePage,title:"评分" },
+    { path: '/formPage', name: 'FormPage', component: FormPage,title:"form表单" },
+    { path: '/formVerify', name: 'FormVerify', component: FormVerify,title:"表单验证" },
+    { path: '/formVerifyDefine', name: 'FormVerifyDefine', component: FormVerifyDefine,title:"自定义验证规则" },
+    { path: '/formDynamic', name: 'FormDynamic', component: FormDynamic,title:"动态增加表单项" },
+    { path: '/tablePage', name: 'TablePage', component: TablePage,title:"table表格" },
+    { path: '/progressBadge', name: 'ProgressBadge', component: ProgressBadge,title:"进度条 /标记" },
+    { path: '/paginationPage', name: 'PaginationPage', component: PaginationPage,title:"分页" },
+    { path: '/alertPage', name: 'AlertPage', component: AlertPage,title:"Alert警告" },
+    { path: '/loadingPage', name: 'LoadingPage', component: LoadingPage,title:"loading加载" },
 
+    { path: '/messaagePage', name: 'MessaagePage', component: MessaagePage,title:"消息提示" },
+    { path: '/messageBoxPage', name: 'MessageBoxPage', component: MessageBoxPage,title:"弹框" },
+    { path: '/notificationPage', name: 'NotificationPage', component: NotificationPage,title:"通知" },
+
+    { path: 'navMenuPage', name: 'NavMenuPage', component: NavMenuPage,title:"导航菜单" },
+    { path: '/tabsPage', name: 'TabsPage', component: TabsPage,title:"tabs标签栏" },
+    { path: '/dropDownPage', name: 'DropDownPage', component: DropDownPage,title:"下拉菜单" },
+
+
+    { path: '/stepsPage', name: 'StepsPage', component: StepsPage,title:"导航菜单" },
+    { path: '/dialogPage', name: 'DialogPage', component: DialogPage,title:"tabs标签栏" },
+    { path: '/popoverPage', name: 'PopoverPage', component: PopoverPage,title:"下拉菜单" },
+    { path: '/cardPage', name: 'CardPage', component: CardPage,title:"下拉菜单" },
+    { path: '/collapsePage', name: 'CollapsePage', component: CollapsePage,title:"下拉菜单" },
 
 
   ]
