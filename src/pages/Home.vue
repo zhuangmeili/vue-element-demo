@@ -18,12 +18,15 @@
   </div>
 </template>
 <script type="text/javascript">
+
+
   export default{
     data(){
       return {
         routes:[],
       }
     },
+
     mounted(){
       this.routes=this.$router.options.routes;
     }

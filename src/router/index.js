@@ -78,9 +78,9 @@ export default new Router({
 
     { path: '/stepsPage', name: 'StepsPage', component: StepsPage,title:"导航菜单" },
     { path: '/dialogPage', name: 'DialogPage', component: DialogPage,title:"tabs标签栏" },
-    { path: '/popoverPage', name: 'PopoverPage', component: PopoverPage,title:"下拉菜单" },
-    { path: '/cardPage', name: 'CardPage', component: CardPage,title:"下拉菜单" },
-    { path: '/collapsePage', name: 'CollapsePage', component: CollapsePage,title:"下拉菜单" },
+    { path: '/popoverPage', name: 'PopoverPage', component: PopoverPage,title:"弹出框" },
+    { path: '/cardPage', name: 'CardPage', component: CardPage,title:"卡片" },
+    { path: '/collapsePage', name: 'CollapsePage', component: CollapsePage,title:"折叠面板" },
 
 
   ]
