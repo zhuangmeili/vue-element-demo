@@ -30,7 +30,9 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## com-paginate分页
-一个常用的分页组件
+一个常用的分页组件,效果如下：
+
+![Image text](https://github.com/zhuangmeili/vue-element-demo/blob/master/static/md/paginate.gif)
 
 ``` bash
 # 组件
@@ -38,7 +40,5 @@ components/ComPaginate.vue
 
 # 示例
 pages/DemoPaginate.vue
-
-![Image text](https://github.com/zhuangmeili/vue-element-demo/blob/master/static/md/paginate.gif)
 
 ```
