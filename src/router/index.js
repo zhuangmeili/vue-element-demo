@@ -39,10 +39,16 @@ const PopoverPage = () => import('@/pages/PopoverPage')
 const CardPage = () => import('@/pages/CardPage')
 const CollapsePage = () => import('@/pages/CollapsePage')
 
+//pc端自己封装的组件
+const DemoPaginate=()=>import('@/pages/DemoPaginate')
 
 Vue.use(Router)
 export default new Router({
   routes: [
+    { path: '/demoPaginate', name: 'DemoPaginate', component: DemoPaginate,title:"自己写的分页插件" },
+
+
+
     { path: '/', name: 'Home', component: Home ,title:"首页"},
     { path: '/layout', name: 'Layout', component: Layout,title:"布局" },
     { path: '/container', name: 'Container', component: Container,title:"布局容器" },
