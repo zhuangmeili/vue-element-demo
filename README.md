@@ -34,7 +34,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ``` bash
 # 组件
-components/ComPaginate;
+components/ComPaginate.vue
+
 # 示例
 pages/DemoPaginate.vue
 
