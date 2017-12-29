@@ -19,7 +19,7 @@
       <div class="pageConR  clearfix">
         <button type="button" class="next" :class="{disabled:currentPage==totalPage}" :disabled="currentPage==totalPage" @click="nextPage">下一页</button>
         <div class="inputCon" >
-          共2页&nbsp;到第<input v-model="jumpPage" type="text" name="jumpPage" class="jumpInput">页
+          共{{totalPage}}页&nbsp;到第<input v-model="jumpPage" type="text" name="jumpPage" class="jumpInput">页
         </div>
         <button type="button" class="confirmBtn FL" @click="confirmPage">确定</button>
       </div>
