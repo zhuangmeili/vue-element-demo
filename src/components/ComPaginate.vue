@@ -30,24 +30,31 @@
 </template>
 
 <script>
+  /*
+  注意：父组件传递过来的  pageCurrent，需要在props中声明，但是不能直接修改跑props中的（pageCurrent）
+  解决办法：
+  1、在data中定义一个变量  currentPage=xxx,接收这个props
+  2、watch currentPage的变化，并且携带参数（currentPage）
+  3、父组件接收 currentPage
+  * */
   export default {
     data() {
       return {
-        totalPage:11,    //总页数
-        totalNumber:103, //数据条数
-        pageSize:10,  //每页显示的数据条数
-        currentPage:1,//当前的页码
-        rangeStart:1, //拓展参数 第一页
-        rangeEnd:6,   //拓展参数 最后一页
+        currentPage:this.pageCurrent,//初始值为传递过来的当前页码
         preClipped:true, //用于判断省略号是否显示
         backClipped:false,
         jumpPage:1,//跳转到第几页
       }
     },
+    props:{
+      totalPage:{ type:Number},   //总页数
+      pageSize:{ type:Number},    //每页显示的数据条数
+      pageCurrent:{ type:Number}, //当前的页码
+    },
     computed:{
       pages:function () {
         let ret = [];
-        console.log(this.currentPage);
+        //console.log(this.currentPage);
         if (this.currentPage > 3) {
           // 当前页码大于三时，显示当前页码的前2个
           ret.push(this.currentPage - 2)
@@ -86,7 +93,11 @@
     },
     methods:{
       goPage(index){
-        this.currentPage=index;
+        if(this.currentPage!==index){
+          this.currentPage=index;
+          //父组件通过change方法来接收当前的页面
+          this.$emit("change",this.currentPage);
+        }
       },
       prevPage(){
         this.currentPage--;
@@ -100,7 +111,11 @@
           this.currentPage=jumpPage;
         }
       }
+    },
+    watch:{
+
     }
+
   }
 </script>
 
