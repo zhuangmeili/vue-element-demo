@@ -41,11 +41,14 @@ const CollapsePage = () => import('@/pages/CollapsePage')
 
 //pc端自己封装的组件
 const DemoPaginate=()=>import('@/pages/DemoPaginate')
+const DemoCalendar=()=>import('@/pages/DemoCalendar')
+
 
 Vue.use(Router)
 export default new Router({
   routes: [
     { path: '/demoPaginate', name: 'DemoPaginate', component: DemoPaginate,title:"自己写的分页插件" },
+    { path: '/demoCalendar', name: 'DemoCalendar', component: DemoCalendar,title:"自己写的日期插件" },
 
 
 

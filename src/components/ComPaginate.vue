@@ -126,8 +126,9 @@
 
   /* left*/
   .pageConL{ float: left;}
-  .pageCon .prev,.pageCon .next{ cursor: pointer; position: relative;width: 65px; height:38px; line-height: 38px; border: 1px solid #e8e8e8;text-align: center; background:#fff;transition: background-color 0.2s ease-in-out;  color: #555;}
-  .pageCon .disabled{background-color: #f5f5f5; color: #aaa; cursor: auto;  }
+  .pageCon .prev,.pageCon .next{ cursor: pointer; user-select: none; position: relative;width: 65px; height:38px; line-height: 38px; border: 1px solid #e8e8e8;text-align: center; background:#fff;transition: background-color 0.2s ease-in-out;  color: #555;}
+  .pageCon .disabled{background-color: #f5f5f5; color: #aaa; cursor: auto; }
+  .pageCon .disabled:hover{cursor: not-allowed;}
 
   /* center */
   .pageConC{ float: left; margin-left: 15px; margin-right: 15px;}

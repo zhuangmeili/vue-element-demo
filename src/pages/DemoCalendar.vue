@@ -1,9 +1,6 @@
 <template>
-  <div class="">
-
-
-
-
+  <div class="container">
+    <com-calendar></com-calendar>
   </div>
 </template>
 
@@ -18,5 +15,6 @@
 </script>
 
 <style scoped>
+  .container{ width: 500px; margin: 30px auto;}
 
 </style>
